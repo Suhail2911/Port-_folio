@@ -20,7 +20,7 @@ $('.menu-btn').click(function(){
             document.getElementById("email").value ="";
             document.getElementById("message").value ="";
             console.log(res);
-            alert("Your message send succesfully");
+            alert('Your message send succesfully');
     })
     .catch((err) => console.log(err));
   }
