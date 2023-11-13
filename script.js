@@ -1,4 +1,4 @@
-$('.menu-btn').click(function(){
+--$('.menu-btn').click(function(){
     $('.navbar.menu'.toggleClass('active'));
     $('.menu-btn i').toggleClass('active');
   });
@@ -11,7 +11,8 @@ $('.menu-btn').click(function(){
   
     const serviceID = "service_6x56has";
     const templateID= "template_szfqk7n";
-  
+      alert('Your message send succesfully');
+
     emailjs
     .send(serviceID,templateID,params)
     .then(
@@ -20,7 +21,7 @@ $('.menu-btn').click(function(){
             document.getElementById("email").value ="";
             document.getElementById("message").value ="";
             console.log(res);
-            alert('Your message send succesfully');
+            alert("you have sent the message");
     })
     .catch((err) => console.log(err));
   }
